@@ -23,3 +23,5 @@ platforms:
 parts:
   charm:
     source: .
+    charm-requirements:
+      - requirements-old.txt
