@@ -1,0 +1,7 @@
+# Direct dependency for the charm-plugin build tracks: the old `bases:` charms
+# (charms/ubuntu-pro_old, charms/ubuntu-advantage) and the ubuntu-advantage
+# 24.04 charm (charms/ubuntu-advantage_noble). The charm plugin resolves
+# transitive dependencies automatically, so only ops is listed here. These
+# tracks target interpreters where ops 2.x+ is unavailable or unnecessary, so
+# ops is kept on the 1.x series.
+ops >= 1.5.0, < 2.0

@@ -1,1 +1,11 @@
-ops >= 1.5.0, < 2.0
+# Full runtime dependency closure for the current multi-base track
+# (charms/ubuntu-pro), built with the charmcraft 4.x `python` plugin on
+# Ubuntu 24.04 + 26.04. The python plugin installs with `pip install --no-deps`,
+# so ops and its entire transitive closure must be listed explicitly. Package
+# versions are pinned to ranges; regenerate this list if ops changes its
+# dependencies, e.g. `pip install 'ops >= 2.17, < 3.0' && pip freeze`.
+ops >= 2.17, < 3.0
+PyYAML >= 6.0
+websocket-client >= 1.0, < 2.0
+opentelemetry-api >= 1.0, < 2.0
+typing-extensions >= 4.0
